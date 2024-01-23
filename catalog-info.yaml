@@ -1,0 +1,19 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-go-api
+  description: A demo API
+  annotations:
+    github.com/project-slug: gabtec/demo-go-api
+    app-instance/version-url: https://my-demo-api.gabtec.pt/version
+
+  tags: ["service", "go", "demo"] # type, lang, framework
+  links:
+    - url: https://github.com/gabtec/demo-go-api.git
+      title: Project Source Code Repository
+      icon: github
+spec:
+  type: service
+  owner: idp_training
+  lifecycle: experimental
