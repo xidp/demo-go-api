@@ -38,7 +38,19 @@ func new(name string) *vData {
 }
 
 func WriteToData(fileName, version, sha string) error {
+	f := "./data/" + fileName + ".txt"
+	// Modify the content (replace with new content)
+	contentString := sha + "\n" + version + "\n"
+	newContent := []byte(contentString)
 
+	// Write the updated content back to the file
+	err := os.WriteFile(f, newContent, os.ModePerm)
+	if err != nil {
+		fmt.Println("Error writing to file:", err)
+		return err
+	}
+
+	fmt.Printf("File '%s' has been updated with new content.\n", f)
 	return nil
 }
 
