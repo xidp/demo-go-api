@@ -7,10 +7,10 @@ import (
 )
 
 type vData struct {
-	Version     string
-	GitSHA      string
-	GitRepo     string
-	GitProvider string
+	Version     string `json:"version"`
+	GitSHA      string `json:"gitSHA"`
+	GitRepo     string `json:"gitRepo"`
+	GitProvider string `json:"gitProvider"`
 }
 
 func new(name string) *vData {

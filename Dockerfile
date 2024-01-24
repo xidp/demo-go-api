@@ -20,12 +20,13 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /server main.go
 # FROM gcr.io/distroless/base-debian11 AS build-release-stage
 FROM alpine:3.19 AS build-release-stage
 
-WORKDIR /
+WORKDIR /app
 
-COPY --from=build-stage /server /server
+COPY ./data/*.txt /app/data/
+COPY --from=build-stage /server /app/server
 
 EXPOSE 3000
 
 # USER nonroot:nonroot
 
-ENTRYPOINT ["/server"]
+ENTRYPOINT ["/app/server"]
