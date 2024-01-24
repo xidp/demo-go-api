@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 
 	"github.com/gabtec/demo-go-api/router"
 	gou "github.com/gabtec/gabtec-gou"
@@ -15,7 +14,7 @@ func main() {
 
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal("Error loading .env file")
+		fmt.Println("[INFO]: NO .env file found. Using defaults")
 	}
 
 	port := gou.GetEnv("PORT", "3000")
