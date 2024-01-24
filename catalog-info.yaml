@@ -6,7 +6,7 @@ metadata:
   description: A demo API
   annotations:
     github.com/project-slug: gabtec/demo-go-api
-    app-instance/version-url: https://my-demo-api.gabtec.pt/version
+    app-instance/version-url: https://sie-demo-go-api.xgeeks.tech/version
 
   tags: ["service", "go", "demo"] # type, lang, framework
   links:
