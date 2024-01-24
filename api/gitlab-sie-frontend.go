@@ -8,8 +8,8 @@ import (
 
 func GetGitlabHandler(e echo.Context) error {
 	return e.JSON(http.StatusOK, map[string]string{
-		"version":     "v0.2.0",
-		"gitSHA":      "6257f89aca3e5a1e30a40b4ed2b9b055fd43d85b",
+		"version":     "v1.2.3",
+		"gitSHA":      "1fe5fbec3d7bb7c83e598240cac3d81731e59c65",
 		"gitRepo":     "ki-group-pt/xgeekshq/external/sx-frontend",
 		"gitProvider": "gitlab.com",
 	})
