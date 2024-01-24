@@ -12,4 +12,7 @@ func SetupRoutes(e *echo.Echo) {
 	e.GET("/health", api.GetHealthHandler)
 
 	e.GET("/version", api.GetVersionHandler)
+
+	e.GET("/github", api.GetGithubHandler)
+	e.GET("/gitlab", api.GetGitlabHandler)
 }
