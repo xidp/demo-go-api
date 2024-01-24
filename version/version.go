@@ -1,8 +1,8 @@
 package version
 
 var (
-	Version     string = "0.3.0"
-	GitSHA      string = "9e8e9e3cd601fb2d4f21efcd25d4b3fddff716eb"
+	Version     string = "0.4.0"
+	GitSHA      string = "7bd054dd1f5505a47481246c439bfc057ea3206c"
 	GitRepo     string = "demo-ago-api"
 	GitProvider string = "github.com"
 )
